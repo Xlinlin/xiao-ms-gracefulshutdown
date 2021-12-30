@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  graceful:
+    shutdown:
+      enabled: true
+      # 默认30S
+      timeout: 30000
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: xiao-ms-graceful-shutdown
+  profiles:
+    active: ${SPRING_PROFILES:dev}
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        refreshable-dataids: arthas-commom.yml
+        shared-dataids: arthas-commom.yml
+        namespace: ${NACOS_NAMESPACE:43f2c792-77bc-421a-94c5-b847ea10b2df}
+      username: ${NACOS_USERNAME:nacos}
+      password: ${NACOS_PASSWORD:nacos}
+      server-addr: ${NACOS_SERVER_ADDR:http://localhost:8848}
+      discovery:
+        namespace: ${NACOS_NAMESPACE:43f2c792-77bc-421a-94c5-b847ea10b2df}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+        enabled: ${NACOS_ENBALED:true}
+        register-enabled: true
+
+# 自定义日志文件
+logging:
+  config: classpath:logback-xiao.xml

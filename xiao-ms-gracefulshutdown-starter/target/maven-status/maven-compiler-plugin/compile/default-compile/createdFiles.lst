@@ -1,0 +1,11 @@
+com\xiao\ms\gsdt\starter\GracefulShutdownAutoConfiguration.class
+com\xiao\ms\gsdt\starter\GracefulShutdown.class
+com\xiao\ms\gsdt\starter\GracefulShutdownAutoConfiguration$UndertowGracefulShutdown.class
+com\xiao\ms\gsdt\starter\undertow\UndertowGracefulShutdownAutoConfiguration.class
+com\xiao\ms\gsdt\starter\GracefulShutdownAutoConfiguration$TomcatGracefulShutdown.class
+com\xiao\ms\gsdt\starter\undertow\UndertowGracefulShutdown.class
+com\xiao\ms\gsdt\starter\undertow\UndertowGracefulShutdownWrapper.class
+com\xiao\ms\gsdt\starter\tomcat\TomcatGracefulShutdown.class
+com\xiao\ms\gsdt\starter\tomcat\TomcatGracefulShutdownAutoConfiguration.class
+META-INF\spring-configuration-metadata.json
+com\xiao\ms\gsdt\starter\properties\GracefulShutdownProperties.class
