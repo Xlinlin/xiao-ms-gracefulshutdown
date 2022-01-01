@@ -10,7 +10,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: xiao-ms-graceful-shutdown
+    name: xiao-ms-graceful-shutdown-demo
   profiles:
     active: ${SPRING_PROFILES:dev}
   cloud:
